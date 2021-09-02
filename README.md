@@ -1,6 +1,6 @@
 # mojob-job-feed
 
-### The task
+## The task
 
 We would like you to use our public test-api to fetch job listings and
 display these job listings in a job feed. We would also like you to create
@@ -20,11 +20,11 @@ then click "Try it out", then scroll a bit down and click the blue
 
 We would like you to try to make it look like on the given design.
 
-### Design
+## Design
 
 
 
-### What we expect
+## What we expect
 
 * Read through entire README.md before delivering
 * Code that works
@@ -39,7 +39,7 @@ We would like you to try to make it look like on the given design.
 * Language
   - We encourage you to use the typescript, but javascript is also allowed.
 
-### Node + NPM versions
+## Node + NPM versions
 ```
 Node v12.19.0 (npm v6.14.8)
 ```
@@ -56,24 +56,24 @@ with the Node+NPM-version of your choice.
 Remember to let us know at the bottom of this README.md before delivering your project
 what you chose.
 
-### Project setup
+## Project setup
 
-#### Command to install dependencies
+### Command to install dependencies
 ```
 npm install
 ```
-#### Command to run development server
+### Command to run development server
 ```
 npm run serve
 ```
 
-### Comments
+## Comments
 
 * Use the tools and framework you are comfortable with. 
 * After you have delivered your project we will read the code and run the project. 
 * We have estimated this task to take 1-2 hours, but you can spend as much time as you like.
 
-### LOOK HERE BEFORE DELIVERING!
+## LOOK HERE BEFORE DELIVERING!
 1. Please fill in this section before delivering your project
 
 ```
