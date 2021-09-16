@@ -109,9 +109,18 @@
   }
  */
 export interface IPage<T> {
+  // count: Contains the total count of all objects T in all pages
   count?: number;
+  // next: The url of the next page. Will be null if we have retrieved the last page.
+  // ATTENTION: THIS FIELD IS BUGGED!!
+  // The bug is that the url we get here is using "http" instead of "https"
+  // So if you want to use this field remember to replace http with https else the API
+  // will fail to respond with the correct data.
+  // Sorry for the inconvenience. Maybe you can help us fix this bug later? :)
   next?: string;
+  // prev: The url of the previous page. Will be null if we have retrieved the first page.
   prev?: string;
+  // results: Contains the list of data objects
   results?: T[];
 }
 
@@ -172,10 +181,18 @@ export interface Poster {
   user_profile?: UserProfile;
 }
 
+/**
+ * Position functions are a way of categorizing and organizing
+ * jobs posted on Mojob.
+ *
+ * We use the International Standard Classification of Occupations (ISCO)
+ * https://en.wikipedia.org/wiki/International_Standard_Classification_of_Occupations
+ */
 export interface PositionFunction {
   id?: number;
   name_en?: string;
   name_nb?: string;
+  children?: PositionFunction[];
 }
 
 export interface Job {

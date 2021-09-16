@@ -18,9 +18,69 @@ To test an endpoint you can click on the endpoint,
 then click "Try it out", then scroll a bit down and click the blue
 "execute" button.
 
-We would like you to try to make it look like on the given design.
+We would like you to try to make it look like the given design.
+There are hints on how to solve the task in the files inside src directory.
 
 ## Design
+
+### Design 1
+
+In the design below you can see a list of job listings, position function filtering 
+selector and pagination page size selector. 
+
+The data to display in the list of jo listings needs to be fetched by our public API.
+
+Notice how that there are no default position function filters set, and that the page size
+is set to 5 items per page.
+
+![Mojob job feed - Design 1](documentation/1.png)
+
+### Design 2
+
+In the design below you can see the position function filtering selector.
+We use Position functions to categorize and organize jobs posted on Mojob.
+We use the [International Standard Classification of Occupations (ISCO)](https://en.wikipedia.org/wiki/International_Standard_Classification_of_Occupations)
+
+To get you started we have already fetched all position functions from the public API
+in `src/Home.vue`.
+
+![Mojob job feed - Design 2](documentation/2.png)
+
+### Design 3
+
+In the design below you can see the tree structure of the position functions and it
+being displayed in the position function filtering selector.
+
+The ISCO standard divides jobs into major groups and sub-major groups.
+
+The jobs can only be connected to sub-major groups, but in the public endpoint to
+fetch job listings you can filter on both major groups and sub-major groups.
+
+When fetched from the public API all major position functions will 
+contain a `children` field that contains a list  of all sub-major position functions.
+
+![Mojob job feed - Design 3](documentation/3.png)
+
+### Design 4
+
+Below you can see the pagination page size selector.
+
+In order to decide the number of objects in each page we can use the query parameter
+`?page_size=5`
+
+The "Display all" option can be solved in several ways:
+* Browse the public API docs and see if you can find `use_pagination` option
+* Use the `count` from `IPage` response from the public API
+* Use a big `page_size` query parameter number
+
+![Mojob job feed - Design 4](documentation/4.png)
+
+### Design 5
+
+Below you can see how the text of the "<page_size> PER PAGE" changes when you select a 
+new page size option.
+
+![Mojob job feed - Design 5](documentation/5.png)
 
 
 

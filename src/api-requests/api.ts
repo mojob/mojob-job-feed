@@ -1,5 +1,5 @@
 import { AxiosStatic } from 'axios';
-import { JobLocation } from '@/models/models';
+import { IPage, PositionFunction } from '@/models/models';
 
 export default class BaseApi {
   public axios!: AxiosStatic;
@@ -10,9 +10,9 @@ export default class BaseApi {
     this.axios = axios;
   }
 
-  public getJobLocations = (): Promise<JobLocation[]> =>
+  public getPositionFunctions = (): Promise<IPage<PositionFunction>> =>
     this.axios
-      .get(`${this.baseUrl}job/locations/`)
+      .get(`${this.baseUrl}job/position-functions/?page_size=100`)
       .then((response) => response.data);
 
   /**
@@ -20,5 +20,4 @@ export default class BaseApi {
    * Use our public api documentation to find out what endpoint to use
    * https://test-api.mojob.io/public/docs/
    */
-
 }
