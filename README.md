@@ -21,6 +21,8 @@ There are hints on how to solve the task in the files inside the src directory.
 
 ## Design
 
+[See the full design in Figma](https://www.figma.com/file/kGJR8Mrvsh8uHnniHr22bs/Mojob-s-tree-structure-testing?node-id=0%3A1)
+
 ### Design 1
 
 In the design below you can see a list of job listings, position function filtering 
