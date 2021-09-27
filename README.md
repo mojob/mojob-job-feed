@@ -4,7 +4,7 @@
 
 We would like you to:
 * fetch job listings and display them in a job feed
-* create a location filter.
+* create a job position function filter.
 
 All job listings and all job locations can be fetched from our public API.
 
