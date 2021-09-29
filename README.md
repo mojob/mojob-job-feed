@@ -28,7 +28,7 @@ There are hints on how to solve the task in the files inside the src directory.
 In the design below you can see a list of job listings, position function filtering 
 selector and pagination page size selector. 
 
-The data to display in the list of jo listings needs to be fetched by our public API.
+The data to display in the list of job listings needs to be fetched from our public API.
 
 Notice how that there are no default position function filters set, and that the page size
 is set to 5 items per page.
